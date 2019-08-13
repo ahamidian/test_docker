@@ -8,4 +8,5 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
-    command: bash -c "ls && python manage.py runserver 0.0.0.0:8000"
+    command: >
+      sh -c "ls && python manage.py runserver 0.0.0.0:8000"
